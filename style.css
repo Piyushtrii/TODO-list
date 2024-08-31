@@ -70,23 +70,23 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 4px; /* Optional: Adds rounded corners */
+    border-radius: 4px; 
   }
 
   button:last-child {
-    margin-right: 0; /* Removes right margin from the last button */
+    margin-right: 0; 
   }
 
   button:hover {
-    background-color: darkgreen; /* Optional: Darker green on hover */
+    background-color: darkgreen; 
   }
 
   button:focus {
-    outline: none; /* Removes the focus outline */
+    outline: none; 
   }
 
   button:active {
-    background-color: forestgreen; /* Optional: Even darker green when clicked */
+    background-color: forestgreen;
   }
 
   button.disabled {
