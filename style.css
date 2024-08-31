@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .box {
+    width: 20vw;
+    height: 70vh;
+    margin: 0 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #333333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow-y: auto;
+  }
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15),
+      0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .box-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  .tile {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+  }
+  .tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  button {
+    margin-right: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px; /* Optional: Adds rounded corners */
+  }
+
+  button:last-child {
+    margin-right: 0; /* Removes right margin from the last button */
+  }
+
+  button:hover {
+    background-color: darkgreen; /* Optional: Darker green on hover */
+  }
+
+  button:focus {
+    outline: none; /* Removes the focus outline */
+  }
+
+  button:active {
+    background-color: forestgreen; /* Optional: Even darker green when clicked */
+  }
+
+  button.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
